@@ -205,10 +205,11 @@ task :travis do
   end
 
   repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
-  deploy_branch = 'gh-pages'
-  if repo.match(/github\.com\.git$/)
-    deploy_branch = 'master'
-  end
+  deploy_branch = 'master'
+#  deploy_branch = 'gh-pages'
+#  if repo.match(/github\.com\.git$/)
+#    deploy_branch = 'master'
+#  end
   system "git remote set-url --push origin #{repo}"
   system "git remote set-branches --add origin #{deploy_branch}"
   system 'git fetch -q'
