@@ -2,7 +2,6 @@ name: Coding Spaces
 title: Coding Spaces
 author: Isaac Christoffersen
 local_tx: America/New_York
-interpolate: false
 disqus: codingspaces
 base_url: http://localhost:4242
 
@@ -19,7 +18,6 @@ scss:
 
 profiles:
   development:
-    minify: false
     disqus_developer: true
     dev: true
     deploy: 
@@ -27,7 +25,6 @@ profiles:
 
   production:
     base_url: http://codingspaces.github.io
-    minify: true
     deploy:
       host: github_pages
       branch: master
