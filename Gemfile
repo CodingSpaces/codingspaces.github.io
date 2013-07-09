@@ -37,4 +37,5 @@ gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc synt
 gem 'kramdown', '>= 0.14.2'                             # If using Markdown
 gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer
 gem 'htmlcompressor', '>= 0.0.3'                        # If using the minify transformer
+gem 'erubis', '>=2.7.0'
 
